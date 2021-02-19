@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: helloworld
-  namespace: argotest
+  namespace: argocd
 spec:
   destination:
     namespace: default
@@ -14,7 +14,7 @@ spec:
       valueFiles:
       - values.yaml
     path: go-hello-http
-    repoURL: https://github.com/warrenlucky/gitops-argocd.git
+    repoURL: https://github.com/warrenlucky/gitops-argocd
     targetRevision: HEAD
   syncPolicy:
     automated:
