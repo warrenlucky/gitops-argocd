@@ -3,18 +3,18 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: helloworld
-  namespace: argocd
+  namespace: argocdtest
 spec:
   destination:
     namespace: default
-    server: https://kubernetes.default.svc
+    server: https://35.232.78.23
   project: default
   source:
     helm:
       valueFiles:
       - values.yaml
     path: go-hello-http
-    repoURL: https://github.com/ironcore864/gitops-argocd
+    repoURL: https://github.com/warrenlucky/gitops-argocd.git
     targetRevision: HEAD
   syncPolicy:
     automated:
