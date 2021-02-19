@@ -20,7 +20,7 @@ spec:
       containers:
       - name: helloworld
         {{ if .Values.image }}
-        image: "warrelucky/go-hello-http:{{ .Values.image.tag }}"
+        image: "warrenlucky/go-hello-http:{{ .Values.image.tag }}"
         {{ else }}
         image: "warrenlucky/go-hello-http:{{ .Chart.AppVersion }}"
         {{ end }}
