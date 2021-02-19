@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: helloworld-tiexin2
-  namespace: argocdtest
+  namespace: argotest
 spec:
   destination:
     namespace: default
