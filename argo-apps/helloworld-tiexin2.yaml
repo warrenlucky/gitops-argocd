@@ -15,7 +15,7 @@ spec:
       - values.yaml
       - values.tiexin2.yaml
     path: go-hello-http
-    repoURL: https://github.com/ironcore864/gitops-argocd
+    repoURL: https://github.com/warrenlucky/gitops-argocd.git
     targetRevision: HEAD
   syncPolicy:
     automated:
