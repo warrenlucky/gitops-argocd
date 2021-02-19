@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     namespace: default
-    server: https://2500717D64A27C5EB9581EF16F66853B.gr7.eu-central-1.eks.amazonaws.com
+    server: https://34.68.185.208
   project: default
   source:
     helm:
